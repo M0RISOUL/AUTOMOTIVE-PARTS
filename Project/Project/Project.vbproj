@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A84766B-E0C9-4709-B7BE-7764256FF497}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project.My.MyApplication</StartupObject>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audit Inventory.Designer.vb">
+      <DependentUpon>Audit Inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit Inventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit Trail.Designer.vb">
+      <DependentUpon>Audit Trail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit Trail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automotive_PartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Automotive_PartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Automotive_PartsDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Automotive_PartsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Automotive_PartsDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Automotive_PartsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Automotive_PartsDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Automotive_PartsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include=".Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Automotive_PartsDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Automotive_PartsDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Automotive_PartsDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Automotive_PartsDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database Recovery Management.Designer.vb">
+      <DependentUpon>Database Recovery Management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database Recovery Management.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery.Designer.vb">
+      <DependentUpon>Delivery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.vb">
+      <DependentUpon>Inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Module.vb" />
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Receipt.Designer.vb">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report Generations.Designer.vb">
+      <DependentUpon>Report Generations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report Generations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security.Designer.vb">
+      <DependentUpon>Security.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityV2.Designer.vb">
+      <DependentUpon>SecurityV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction.Designer.vb">
+      <DependentUpon>Transaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Audit Inventory.resx">
+      <DependentUpon>Audit Inventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit Trail.resx">
+      <DependentUpon>Audit Trail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database Recovery Management.resx">
+      <DependentUpon>Database Recovery Management.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery.resx">
+      <DependentUpon>Delivery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Generations.resx">
+      <DependentUpon>Report Generations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security.resx">
+      <DependentUpon>Security.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityV2.resx">
+      <DependentUpon>SecurityV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction.resx">
+      <DependentUpon>Transaction.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Automotive_PartsDataSet.xsc">
+      <DependentUpon>Automotive_PartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Automotive_PartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Automotive_PartsDataSet.xss">
+      <DependentUpon>Automotive_PartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet1.xsc">
+      <DependentUpon>Automotive_PartsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Automotive_PartsDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Automotive_PartsDataSet1.xss">
+      <DependentUpon>Automotive_PartsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet2.xsc">
+      <DependentUpon>Automotive_PartsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Automotive_PartsDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Automotive_PartsDataSet2.xss">
+      <DependentUpon>Automotive_PartsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet3.xsc">
+      <DependentUpon>Automotive_PartsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Automotive_PartsDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Automotive_PartsDataSet3.xss">
+      <DependentUpon>Automotive_PartsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include=".xsc">
+      <DependentUpon>.xsd</DependentUpon>
+    </None>
+    <None Include=".xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include=".xss">
+      <DependentUpon>.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet5.xsc">
+      <DependentUpon>Automotive_PartsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Automotive_PartsDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Automotive_PartsDataSet5.xss">
+      <DependentUpon>Automotive_PartsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet6.xsc">
+      <DependentUpon>Automotive_PartsDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Automotive_PartsDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Automotive_PartsDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Automotive_PartsDataSet6.xss">
+      <DependentUpon>Automotive_PartsDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Automotive Parts.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\yearning.gif" />
+    <None Include="Resources\JETBOY AUTOMOTIVE PARTS %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
